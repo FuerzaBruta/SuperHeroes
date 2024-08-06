@@ -1,5 +1,38 @@
-div nav {
+body {
+    background-image: url(/assets/img/img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
     background-color: rgb(59, 60, 59);
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen {
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.centrar-imagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.card-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .p1 {
@@ -9,13 +42,46 @@ div nav {
     font-style: normal;
 }
 
-.p2{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    font-weight: 50;
-    font-style: normal;
+.p2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 30;
+    font-style: italic;
 }
 
-form{
-    width: 400px;
+.form-control {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+    background-color: #013063; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.btn:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25); /* Sombra azul al enfocarse */
+}
+
+.btn:disabled {
+    background-color: #cccccc; /* Color de fondo para el estado deshabilitado */
+    color: #666666; /* Color de texto para el estado deshabilitado */
+    cursor: not-allowed; /* Cambia el cursor al estado no permitido */
 }

@@ -15,8 +15,7 @@
 </head>
 
 <body>
-
-        <div>
+    
         <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -24,34 +23,32 @@
                 </a>
             </div>
         </nav>
-    </div>
+    
 
-    <div class="container">
-        <img src="./assets/img/sh2.jpg" alt="">
-    </div>
-
-    <div class="container">
-        <div class="p1">
-            <p>Encuentra tu SuperHero</p>
-        </div>
-        <div class="p2">
-            <p>Ingresa el número del héroe a buscar</p>
+    <div class="content-container">
+        <div class="imagen">
+            <img src="./assets/img/hero.png" alt="Imagen Central" class="centrar-imagen">
+            <p class="p1">Encuentra tu SuperHero</p>
+            <p class="p2">Ingresa el número del Superhero a buscar</p>
         </div>
     </div>
 
-    <div class="container">
-        <form>
-            <div class="mb-3">
-                <label for="txtNumeroHeroe" class="form-label"></label>
-                <input type="text" class="form-control" id="txtNumeroHeroe">
-            </div>            
-        </form>
-    </div>
-    <div class="container">
-        <button type="button" class="btn btn-primary" id="btnBuscarHeroe">Buscar héroe</button>
+    <div class="container mt-3">
+        <div class="form-group">
+            <input type="text" id="IdHeroe" class="form-control" placeholder="Pon un número del 1 al 731 para encontrar tu SuperHroe">
+        </div>
     </div>
 
-    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <div class="content-container">
+        <button id="btn" class="btn btn-primary mt-3">Buscar</button>
+    </div>
+
+    <div class="container">
+        <div>
+            <div id="heroInfo" class="mt-6"></div>
+        <div id="chartContainer" style="height: 370px; width: auto;"></div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
